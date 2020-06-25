@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Actor } from './Entidades/Actor';
+
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,10 @@ export class AppComponent {
   
 
   constructor() {
-    
+  }
+
+
+  evento1() {
+    throw new Error('error generado en evento 1');
   }
 }
